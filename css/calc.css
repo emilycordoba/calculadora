@@ -1,0 +1,23 @@
+body {
+    font-family: 'Muli', sans-serif;
+    display: grid;
+    justify-content: center;
+}
+.container {
+    display:grid;
+    grid-auto-rows: 50px;
+    grid-template-columns: 200px; 
+    grid-gap: 10px;
+}
+.inputs {
+    padding: 5px
+}
+.calc, .inputs {
+    border-radius: 5px;
+    font-family: 'Muli', sans-serif;
+    border: 1px solid #D1DBDB;
+}
+.calc {
+    background-color: #3E9E9E;
+    color: white;
+}
