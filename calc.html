@@ -11,35 +11,19 @@
 </head>
 <body>
     <div class="container">
+        <h1>Calculadora</h1>
         <input type="text" id="num1" placeholder="Numero 1" class="inputs">
         <input type="text" name="" id="num2" placeholder="Numero 2" class="inputs">
-        <button class="calc" onclick="calcular('sumar')">Suma</button>
-        <button class="calc" onclick="calcular()">Resta</button>
-        <!--<button class="calc" onclick="sumar()">Calcular</button>-->
-
+        <div class="buttons">
+            <div class="calcs">
+                <button class="calc" onclick="calcular('+')">Suma</button>
+                <button class="calc" onclick="calcular('*')">Multiplicación</button>
+                <button class="calc" onclick="calcular('-')">Resta</button>
+                <button class="calc" onclick="calcular('/')">División</button>
+            </div>
+            <button class="calc delete" onclick="deleteResult()">Borrar</button>
+        </div>
+        <p>El resultado es: <span id="result"></span> </p>
     </div>
-    <!--<fieldset>
-        <legend>Ingrese dos numeros</legend>
-        <div class="row">
-            <div class="col-25">
-                <label for="">Numero 1: </label>
-            </div>
-            <div class="col-75">
-                <input type="text" name="" id="num1">
-            </div>
-        </div>
-        <div class="row">
-            <div class="col-25">
-                <label for="">Numero 2:</label>
-            </div>
-            <div class="col-75">
-                <input type="text" name="" id="num2">
-            </div>
-        </div>
-        <div class="row">
-            <img src="images/mas.png" alt="" width="48px" height="48px">
-            <input type="text" name="" id="" type="button" value="Calcular" onclick="Sumar()">
-        </div>
-    </fieldset>-->
 </body>
 </html>
